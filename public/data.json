@@ -1,0 +1,114 @@
+[
+  {
+    "customerName": "Jane Cooper",
+    "company": "Microsoft",
+    "phoneNumber": "(225) 555-0118",
+    "email": "jane@microsoft.com",
+    "country": "United States",
+    "status": "Active"
+  },
+  {
+    "customerName": "Floyd Miles",
+    "company": "Yahoo",
+    "phoneNumber": "(205) 555-0100",
+    "email": "floyd@yahoo.com",
+    "country": "Kiribati",
+    "status": "Inactive"
+  },
+  {
+    "customerName": "Ronald Richards",
+    "company": "Adobe",
+    "phoneNumber": "(302) 555-0107",
+    "email": "ronald@adobe.com",
+    "country": "Israel",
+    "status": "Inactive"
+  },
+  {
+    "customerName": "Marvin McKinney",
+    "company": "Tesla",
+    "phoneNumber": "(252) 555-0126",
+    "email": "marvin@tesla.com",
+    "country": "Iran",
+    "status": "Active"
+  },
+    {
+      "customerName": "Alice Johnson",
+      "company": "Google",
+      "phoneNumber": "(123) 555-1234",
+      "email": "alice@google.com",
+      "country": "United States",
+      "status": "Active"
+    },
+    {
+      "customerName": "Bob Smith",
+      "company": "Amazon",
+      "phoneNumber": "(456) 555-5678",
+      "email": "bob@amazon.com",
+      "country": "Canada",
+      "status": "Inactive"
+    },
+    {
+      "customerName": "Eve Davis",
+      "company": "Apple",
+      "phoneNumber": "(789) 555-9012",
+      "email": "eve@apple.com",
+      "country": "Australia",
+      "status": "Active"
+    },
+    {
+      "customerName": "Charlie Brown",
+      "company": "Microsoft",
+      "phoneNumber": "(321) 555-3456",
+      "email": "charlie@microsoft.com",
+      "country": "United Kingdom",
+      "status": "Active"
+    },
+    {
+      "customerName": "Grace Lee",
+      "company": "IBM",
+      "phoneNumber": "(654) 555-7890",
+      "email": "grace@ibm.com",
+      "country": "Singapore",
+      "status": "Inactive"
+    },
+    {
+      "customerName": "David Wang",
+      "company": "Intel",
+      "phoneNumber": "(987) 555-2345",
+      "email": "david@intel.com",
+      "country": "China",
+      "status": "Active"
+    },
+    {
+      "customerName": "Sophia Kim",
+      "company": "Facebook",
+      "phoneNumber": "(135) 555-6789",
+      "email": "sophia@facebook.com",
+      "country": "South Korea",
+      "status": "Inactive"
+    },
+    {
+      "customerName": "Oliver Harris",
+      "company": "Twitter",
+      "phoneNumber": "(864) 555-1234",
+      "email": "oliver@twitter.com",
+      "country": "Japan",
+      "status": "Active"
+    },
+    {
+      "customerName": "Emma Martinez",
+      "company": "Netflix",
+      "phoneNumber": "(279) 555-5678",
+      "email": "emma@netflix.com",
+      "country": "Brazil",
+      "status": "Active"
+    },
+    {
+      "customerName": "William Wilson",
+      "company": "Tesla",
+      "phoneNumber": "(780) 555-9012",
+      "email": "william@tesla.com",
+      "country": "Germany",
+      "status": "Inactive"
+    }  
+]
