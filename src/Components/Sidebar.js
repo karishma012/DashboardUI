@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
 import { faTableCells } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
-
+import logoImage from './logo.png';
 function Sidebar() {
   return (
     <div className="h-100% w-1/5 bg-white text-black rounded-3xl">
       <div className="p-4">
-        <div className="text-4xl font-bold">ZAG</div>
+        {/* Replace "ZAG" with the logo image */}
+        <img src={logoImage} alt="Logo" className="w-16 h-16" />
       </div>
       <ul className="py-4">
       <li className="py-2 pl-4 border-l-4 border-transparent hover:border-blue-400">
