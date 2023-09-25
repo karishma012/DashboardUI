@@ -9,8 +9,8 @@ function Sidebar() {
   return (
     <div className="h-100% w-1/5 bg-white text-black rounded-3xl">
       <div className="p-4">
-        {/* Replace "ZAG" with the logo image */}
-        <img src={logoImage} alt="Logo" className="w-16 h-16" />
+       
+        <img src={logoImage} alt="Logo" className="w-16 h-16 ml-8" />
       </div>
       <ul className="py-4">
       <li className="py-2 pl-4 border-l-4 border-transparent hover:border-blue-400">

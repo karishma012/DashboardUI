@@ -7,7 +7,7 @@ import Donut from './Components/Charts';
 
 function App() {
   return (
-    <div className="bg-gray-200"> {/* Apply the bg-gray-200 class for the grey background */}
+    <div className="bg-gray-200"> 
       <div className="flex">
         <Sidebar />
         <div className="flex-1 flex flex-col">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import searchImage from './search.png';
 
 function Table() {
     const [searchText, setSearchText] = useState('');
@@ -58,43 +59,67 @@ function Table() {
 
     return (
         <div className="table-container w-5/6 mx-auto p-4 bg-white rounded-full rounded-t-lg rounded-b-lg">
-        <table className="w-full">
-            <thead>
-            <th className="py-2 pr-8 font-bold text-[#16C098]">
+            <table className="w-full">
+                <tbody>
+                    <tr className="">
+                        <td colSpan="6" className="text-right">
+                            <input
+                                type="text"
+                                placeholder="  Search"
+                                className="px-2 py-2 border border-gray-300 rounded mr-2"
+                                value={searchText}
+                                onChange={handleSearchChange}
+                                style={{
+                                    backgroundImage: `url(${searchImage})`,
+                                    backgroundPosition: '10px center',
+                                    backgroundRepeat: 'no-repeat',
+                                    paddingLeft: '40px', // Adjust the value as needed based on image size
+                                }}
+                            />
+                            <button className="bg-gray-100 px-4 py-2 rounded mr-2 hover:rounded">
+                                Sort By: <span className="font-semibold">Newest</span>
+                                <FontAwesomeIcon icon={faCaretDown} className='mx-2' />
+                            </button>
+                        </td>
+                    </tr>
+                    <tr className="font-bold text-[#16C098]">
+                    <th className="py-2 pr-8 font-bold text-[#16C098]">
                         <span className="ml-2">Active Members</span>
                        
                     </th>
-                <tr className="w-full text-gray-400 border-b border-gray-300">
-                    <th className=" py-2 pr-8">Customer Name</th>
-                    <th className=" py-2 pr-8">Company</th>
-                    <th className=" py-2 pr-8">Phone Number</th>
-                    <th className=" py-2 pr-8">Email</th>
-                    <th className=" py-2 pr-8">Country</th>
-                    <th className=" py-2 pr-8">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                {/* Render rows for the current page */}
-                {currentData.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-300">
-                        <td className="py-2 pl-8">{row.customerName}</td>
-                        <td className="py-2">{row.company}</td>
-                        <td className="py-2">{row.phoneNumber}</td>
-                        <td className="py-2">{row.email}</td>
-                        <td className="py-2">{row.country}</td>
-                        <td className="py-2">
-                            {row.status === 'Active' ? (
-                                <button className="w-20 bg-green-100 text-[#00B087]  border-solid border-2 border-[#00B087] px-2 py-1 rounded">
-                                    {row.status}
-                                </button>
-                            ) : (
-                                <button className="w-20 bg-red-100 text-[#DF0404] border-solid border-2 border-[#DF0404] px-2 py-1 rounded">
-                                    {row.status}
-                                </button>
-                            )}
-                        </td>
+</tr>
+
+
+                    <tr className="w-full text-gray-400 border-b border-gray-300">
+                        <th className=" py-2 pr-8">Customer Name</th>
+                        <th className=" py-2 pr-8">Company</th>
+                        <th className=" py-2 pr-8">Phone Number</th>
+                        <th className=" py-2 pr-8">Email</th>
+                        <th className=" py-2 pr-8">Country</th>
+                        <th className=" py-2 pr-8">Status</th>
                     </tr>
-                ))}
+                   {/* Render rows for the current page */}
+{currentData.map((row, index) => (
+    <tr key={index} className="border-b border-gray-300">
+        <td className="py-2 pl-8">{row.customerName}</td>
+        <td className="py-2">{row.company}</td>
+        <td className="py-2">{row.phoneNumber}</td>
+        <td className="py-2">{row.email}</td>
+        <td className="py-2">{row.country}</td>
+        <td className="py-2">
+            {row.status === 'Active' ? (
+                <button className="w-20 bg-green-100 text-[#00B087]  border-solid border-2 border-[#00B087] px-2 py-1 rounded">
+                    {row.status}
+                </button>
+            ) : (
+                <button className="w-20 bg-red-100 text-[#DF0404] border-solid border-2 border-[#DF0404] px-2 py-1 rounded">
+                    {row.status}
+                </button>
+            )}
+        </td>
+    </tr>
+))}
+
                     {/* Pagination */}
                     <tr className="">
                         <td colSpan="6">
